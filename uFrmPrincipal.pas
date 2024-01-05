@@ -89,7 +89,7 @@ end;
 
 procedure TFrmPrincipal.FormCreate(Sender: TObject);
 begin
-  I:=TIniFile.Create(ExtractFilePath(Application.ExeName)+'Config.ini');
+  I := TIniFile.Create(ExtractFilePath(Application.ExeName)+'Config.ini');
   Self.WindowState := wsMinimized;
   TrayIcon.Visible := True;
   TrayIcon.Animate := True;
